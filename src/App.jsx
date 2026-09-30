@@ -1,7 +1,7 @@
 
-function App() {
 
-  return (<div>
+function Header() {
+  return  (
     <header>
       <img src='src/assets/react-core-concepts.png' alt="Atom"></img>
       <h1>
@@ -11,6 +11,15 @@ function App() {
         Fundamental React concepts you will need for almost any app you are going to build!
       </p>
     </header>
+  );
+}
+
+
+function App() {
+
+  return (<div>  
+    {/* usage */}
+    <Header></Header>
   </div>);
 }
 
