@@ -1,9 +1,6 @@
 import Header from "./components/Header";
 import CoreConcept from "./components/CoreConcept";
-import componentImg from './assets/components.png'
-import jsxImg from './assets/jsx-ui.png'
-import propsImg from './assets/config.png'
-import stateImg from './assets/state-mgmt.png'
+import CORE_CONCEPTS from "./data";
 
 function App() {
   console.log("Executing App");
@@ -13,14 +10,17 @@ function App() {
     <Header></Header>
     <section id="core-concepts">
       <ul>
-        <CoreConcept 
-          title="Components" 
-          desc="UI building blocks..." 
-          img={componentImg}>
+        {/* <CoreConcept 
+          title={CORE_CONCEPTS[0].title}
+          desc={CORE_CONCEPTS[0].desc} 
+          img={CORE_CONCEPTS[0].img}>
         </CoreConcept>
-        <CoreConcept title="JSX" desc="HTM style code..." img={jsxImg}></CoreConcept>
-        <CoreConcept title="Props" desc="Helps to make components configurable..." img={propsImg}></CoreConcept>
-        <CoreConcept title="State" desc="..." img={stateImg}></CoreConcept>
+        <CoreConcept {...CORE_CONCEPTS[1]}></CoreConcept>
+        <CoreConcept {...CORE_CONCEPTS[2]}></CoreConcept>
+        <CoreConcept {...CORE_CONCEPTS[3]}></CoreConcept> */}
+
+        {CORE_CONCEPTS.map((concept, index) => <CoreConcept {...concept} key={index}></CoreConcept>)}
+
       </ul>
     </section>
     </main>
