@@ -7,7 +7,6 @@ function getRandomInt(max) {
 }
 
 function Header() {
-  console.log("Executing Header");
   let decsription = descriptons[getRandomInt(3)];
   return  (
     <header>
