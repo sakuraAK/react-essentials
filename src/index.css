@@ -150,4 +150,35 @@ header {
     background-color: #140524;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
   }
+
+#use-effect-example {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 6px;
+  background-color: #2f1d43;
+}
+
+#use-effect-example label,
+#use-effect-example textarea {
+  display: block;
+  width: 100%;
+}
+
+#use-effect-example textarea {
+  margin: 0.5rem 0 1rem;
+  padding: 0.75rem;
+  border: 1px solid #8964b0;
+  border-radius: 4px;
+  font: inherit;
+}
+
+#use-effect-example button {
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 4px;
+  background-color: #7925d3;
+  color: #ebe7ef;
+  font: inherit;
+  cursor: pointer;
+}
   
