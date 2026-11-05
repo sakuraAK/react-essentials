@@ -8,15 +8,14 @@ function UseRefLogin() {
     event.preventDefault();
     console.log("Email: " + email.current.value);
     console.log("Password: " + password.current.value);
-    email.current.focus();
+
+    event.target.reset();
+
   }
 
-  function handleReset(event) {
-    event.target.reset();
-  }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} onReset={(event) => event.target.reset()}>
       <h2>Login</h2>
       <div className="control-row">
         <div className="control no-margin">
@@ -29,7 +28,7 @@ function UseRefLogin() {
         </div>
       </div>
       <p className="form-actions">
-        <button className="button button-flat">Reset</button>
+        <button className="button button-flat" type="reset">Reset</button>
         <button className="button">Login</button>
       </p>
     </form>
