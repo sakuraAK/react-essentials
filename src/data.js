@@ -1,9 +1,3 @@
-import componentsImg from './assets/components.png';
-import propsImg from './assets/config.png';
-import jsxImg from './assets/jsx-ui.png';
-import stateImg from './assets/state-mgmt.png';
-
-
 export const MOVIES = [
   // ACTION
   {
@@ -12,7 +6,10 @@ export const MOVIES = [
     genre: "Action",
     year: 1988,
     description: "An ordinary night turns into an extraordinary battle in a skyscraper.",
-    poster: "/images/live-hard.png"
+    poster: new URL('./assets/live-hard.png', import.meta.url).href,
+    //New York
+    lat: 40.7143,
+    lon: -74.0060,
   },
   {
     id: 2,
@@ -20,7 +17,10 @@ export const MOVIES = [
     genre: "Action",
     year: 2015,
     description: "A high-speed chase through a dangerous post-apocalyptic desert.",
-    poster: "/images/mad-max-fury-highway.png"
+    poster: new URL('./assets/mad-max.png', import.meta.url).href,
+    //Montreal
+    lat: 45.508888,
+    lon: -73.561668,
   },
   {
     id: 3,
@@ -28,7 +28,10 @@ export const MOVIES = [
     genre: "Action",
     year: 2014,
     description: "A retired assassin returns to settle an unfinished score.",
-    poster: "/images/john-quick.png"
+    poster: new URL('./assets/john-quick.png', import.meta.url).href,
+     //New York
+    lat: 40.7143,
+    lon: -74.0060,
   },
   {
     id: 4,
@@ -36,7 +39,10 @@ export const MOVIES = [
     genre: "Action",
     year: 1996,
     description: "A secret agent races against time to stop a global conspiracy.",
-    poster: "/images/mission-nearly-impossible.png"
+    poster: new URL('./assets/mission-nearly-impossible.png', import.meta.url).href,
+     //New York
+    lat: 40.7143,
+    lon: -74.0060,
   },
   {
     id: 5,
@@ -44,7 +50,10 @@ export const MOVIES = [
     genre: "Action",
     year: 1986,
     description: "An elite fighter pilot pushes the limits of speed and courage.",
-    poster: "/images/top-pilot.png"
+    poster: new URL('./assets/top-pilot.png', import.meta.url).href,
+    //Montreal
+    lat: 45.508888,
+    lon: -73.561668,
   },
 
   // THRILLER
@@ -54,7 +63,10 @@ export const MOVIES = [
     genre: "Thriller",
     year: 1991,
     description: "An FBI trainee seeks help from a brilliant but terrifying prisoner.",
-    poster: "/images/silence-of-the-sheep.png"
+    poster: new URL('./assets/the-silence-of-the-sheep.png', import.meta.url).href,
+     //New York
+    lat: 40.7143,
+    lon: -74.0060,
   },
   {
     id: 7,
@@ -62,7 +74,10 @@ export const MOVIES = [
     genre: "Thriller",
     year: 2010,
     description: "A detective investigates a mysterious disappearance on a remote island.",
-    poster: "/images/closed-island.png"
+    poster: new URL('./assets/closed-island.png', import.meta.url).href,
+    //Montreal
+    lat: 45.508888,
+    lon: -73.561668,
   },
   {
     id: 8,
@@ -70,7 +85,10 @@ export const MOVIES = [
     genre: "Thriller",
     year: 1995,
     description: "Two detectives hunt a serial killer inspired by the deadly sins.",
-    poster: "/images/six.png"
+    poster: new URL('./assets/six.png', import.meta.url).href,
+     //New York
+    lat: 40.7143,
+    lon: -74.0060,
   },
   {
     id: 9,
@@ -78,7 +96,10 @@ export const MOVIES = [
     genre: "Thriller",
     year: 2014,
     description: "A husband's life turns upside down when his wife mysteriously disappears.",
-    poster: "/images/missing-wife.png"
+    poster: new URL('./assets/missing-wife.png', import.meta.url).href,
+    //Montreal
+    lat: 45.508888,
+    lon: -73.561668,
   },
   {
     id: 10,
@@ -86,7 +107,10 @@ export const MOVIES = [
     genre: "Thriller",
     year: 1999,
     description: "A young boy claims to see things that others cannot.",
-    poster: "/images/seventh-sense.png"
+    poster: new URL('./assets/the-seventh-sense.png', import.meta.url).href,
+     //New York
+    lat: 40.7143,
+    lon: -74.0060,
   },
 
   // COMEDY
@@ -96,7 +120,10 @@ export const MOVIES = [
     genre: "Comedy",
     year: 1990,
     description: "A kid gets left behind and defends his home from burglars.",
-    poster: "/images/house-alone.png"
+    poster: new URL('./assets/house-alone.png', import.meta.url).href,
+    //Montreal
+    lat: 45.508888,
+    lon: -73.561668,
   },
   {
     id: 12,
@@ -104,7 +131,10 @@ export const MOVIES = [
     genre: "Comedy",
     year: 2009,
     description: "Three friends wake up after a wild night with no memory of what happened.",
-    poster: "/images/morning-after.png"
+    poster: new URL('./assets/the-morning-after.png', import.meta.url).href,
+     //New York
+    lat: 40.7143,
+    lon: -74.0060,
   },
   {
     id: 13,
@@ -112,7 +142,10 @@ export const MOVIES = [
     genre: "Comedy",
     year: 1993,
     description: "A man finds himself repeating the same day over and over.",
-    poster: "/images/yesterday-again.png"
+    poster: new URL('./assets/yesterday-again.png', import.meta.url).href,
+    //Montreal
+    lat: 45.508888,
+    lon: -73.561668,
   },
   {
     id: 14,
@@ -120,7 +153,10 @@ export const MOVIES = [
     genre: "Comedy",
     year: 1994,
     description: "Two not-so-bright friends embark on an unforgettable road trip.",
-    poster: "/images/silly-and-sillier.png"
+    poster: new URL('./assets/silly-and-sillier.png', import.meta.url).href,
+     //New York
+    lat: 40.7143,
+    lon: -74.0060,
   },
   {
     id: 15,
@@ -128,7 +164,10 @@ export const MOVIES = [
     genre: "Comedy",
     year: 1993,
     description: "A father disguises himself to spend more time with his children.",
-    poster: "/images/mr-doubtful.png"
+    poster: new URL('./assets/mr-doubtful.png', import.meta.url).href,
+    //Montreal
+    lat: 45.508888,
+    lon: -73.561668,
   },
 
   // DRAMA
@@ -138,7 +177,10 @@ export const MOVIES = [
     genre: "Drama",
     year: 1994,
     description: "A banker sentenced to prison finds hope and friendship behind bars.",
-    poster: "/images/shawshank-escape.png"
+    poster: new URL('./assets/the-shawshank-escape.png', import.meta.url).href,
+     //New York
+    lat: 40.7143,
+    lon: -74.0060,
   },
   {
     id: 17,
@@ -146,7 +188,10 @@ export const MOVIES = [
     genre: "Drama",
     year: 1994,
     description: "A kind-hearted man unexpectedly becomes part of major historical events.",
-    poster: "/images/forest-jump.png"
+    poster: new URL('./assets/forest-jump.png', import.meta.url).href,
+    //Montreal
+    lat: 45.508888,
+    lon: -73.561668,
   },
   {
     id: 18,
@@ -154,7 +199,10 @@ export const MOVIES = [
     genre: "Drama",
     year: 1999,
     description: "A prison guard encounters an inmate with an extraordinary gift.",
-    poster: "/images/green-road.png"
+    poster: new URL('./assets/the-green-road.png', import.meta.url).href,
+     //New York
+    lat: 40.7143,
+    lon: -74.0060,
   },
   {
     id: 19,
@@ -162,7 +210,10 @@ export const MOVIES = [
     genre: "Drama",
     year: 1997,
     description: "A tragic love story unfolds aboard a legendary ocean liner.",
-    poster: "/images/atlantic.png"
+    poster: new URL('./assets/atlantic.png', import.meta.url).href,
+    //Montreal
+    lat: 45.508888,
+    lon: -73.561668,
   },
   {
     id: 20,
@@ -170,36 +221,9 @@ export const MOVIES = [
     genre: "Drama",
     year: 2006,
     description: "A struggling father fights to build a better life for himself and his son.",
-    poster: "/images/search-for-happiness.png"
+    poster: new URL('./assets/the-search-for-happiness.png', import.meta.url).href,
+     //New York
+    lat: 40.7143,
+    lon: -74.0060,
   }
 ];
-
-
-
-const CORE_CONCEPTS = [
-  {
-    img: componentsImg,
-    title: 'Components',
-    desc:
-      'The core UI building block - compose the user interface by combining multiple components.',
-  },
-  {
-    img: jsxImg,
-    title: 'JSX',
-    desc:
-      'Return (potentially dynamic) HTML(ish) code to define the actual markup that will be rendered.',
-  },
-  {
-    img: propsImg,
-    title: 'Props',
-    desc:
-      'Make components configurable (and therefore reusable) by passing input data to them.',
-  },
-  {
-    img: stateImg,
-    title: 'State',
-    desc:
-      'React-managed data which, when changed, causes the component to re-render & the UI to update.',
-  }
-];
-export default CORE_CONCEPTS;
